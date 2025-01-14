@@ -8,15 +8,15 @@ typedef struct {
     char *KLB_elements;
     int KLB_top;
     int KLB_capacite;
-} KLB_Pile;
+} Pile_Tab_t;
 
 // Prototypes des fonctions
-KLB_Pile* KLB_creer_pile(int capacite);
-void KLB_detruire_pile(KLB_Pile *pile);
-bool KLB_est_vide(KLB_Pile *pile);
-bool KLB_est_pleine(KLB_Pile *pile);
-void KLB_empiler(KLB_Pile *pile, char element);
-char KLB_depiler(KLB_Pile *pile);
-char KLB_sommet(KLB_Pile *pile);
+Pile_Tab_t* KLB_creer_pile(int capacite);
+void KLB_detruire_pile(Pile_Tab_t *pile);
+bool KLB_est_vide(Pile_Tab_t *pile);
+bool KLB_est_pleine(Pile_Tab_t *pile);
+void KLB_empiler(Pile_Tab_t *pile, char element);
+char KLB_depiler(Pile_Tab_t *pile);
+char KLB_sommet(Pile_Tab_t *pile);
 
 #endif
