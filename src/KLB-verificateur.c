@@ -12,7 +12,7 @@ bool KLB_verifier_expression(const char *expression) {
         return false;
     }
 
-    Pile_Tab_t *pile = KLB_creer_pile(sizeOfWord);
+    Pile_Tab_t *pile = KLB_creer_pile();
     
     for (int i = 0; expression[i] != '\0'; i++) {
         char c = expression[i];
